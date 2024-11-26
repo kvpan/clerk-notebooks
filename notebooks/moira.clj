@@ -16,7 +16,7 @@
                 :SD2 [4.2 4.4 4.7 5 5.4 5.7 6 6.2 6.5 6.7 6.9 7.1 7.3 7.5],
                 :SD3 [4.8 5.1 5.4 5.7 6.1 6.5 6.8 7.1 7.3 7.6 7.8 8.1 8.3 8.5]}
       week (:Week expected)
-      moira [2.640 nil  2.690 2.770 2.960 3.120 3.250 3.320 3.770 3.940]]
+      moira [2.640 nil  2.690 2.770 2.960 3.120 3.250 3.320 3.770 3.940 nil nil 4.370]]
   (clerk/plotly {:data [{:x week :y (:SD0 expected) :type "scatter" :mode "lines" :name "Median"}
                         {:x week :y (:SD1neg expected) :type "scatter" :mode "lines" :name "SD -1"}
                         {:x week :y (:SD2neg expected) :type "scatter" :mode "lines" :name "SD -2"}
@@ -44,7 +44,7 @@
                 :P99 [4.4 4.6 4.9 5.3 5.6 5.9 6.2 6.5 6.7 7 7.2 7.4 7.6 7.8],
                 :P999 [4.8 5.1 5.4 5.7 6.2 6.5 6.8 7.1 7.3 7.6 7.8 8.1 8.3 8.6]}
       week (:Week expected)
-      moira [2.640 nil 2.690 2.770 2.960 3.120 3.250 3.320 3.770 3.940]]
+      moira [2.640 nil 2.690 2.770 2.960 3.120 3.250 3.320 3.770 3.940 nil nil 4.370]]
   (clerk/plotly {:data [{:x week :y (:P50 expected) :type "scatter" :mode "lines" :name "50"}
                         {:x week :y (:P10 expected) :type "scatter" :mode "lines" :name "10"}
                         {:x week :y (:P5 expected) :type "scatter" :mode "lines" :name "5"}
